@@ -1,0 +1,19 @@
+# importing
+import pyttsx3
+import os
+
+# initialisation
+engine = pyttsx3.init()
+
+# testing
+engine.say("Goodbye cruel world")
+engine.runAndWait()
+
+# produces prompt to shut down
+
+shutdown = input("Do you wish to shutdown your computer ? (yes / no): ") 
+
+if shutdown == 'no': 
+    exit() 
+else: 
+    os.system("shutdown /s /t 1") 
